@@ -284,14 +284,12 @@ a {
 }
 
 .media-icons i {
-  display: inline-block;
-  border-radius: 60px;
-  padding: 0.45em 0.5em;
-  background-color: #FF5757;
   color: #FFFFFF;
-  width: 60px;
-  height: 60px;
   font-size: 1.8rem;
+  background-color: #FF5757;
+  border-radius: 50%;
+  border: none;
+  padding: 18px;
 }
 
 .media-icons i:hover {
@@ -310,20 +308,17 @@ a {
   transition: scale(1.3);
 }
 
-.cards-container {
+.card__home-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 3rem;
-}
-
-.card__home-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card__home {
@@ -430,24 +425,22 @@ a {
 .footer__top-social-icons i {
   display: inline-block;
   border-radius: 10px;
-  padding: 0.45em 0.5em;
   background-color: #545454;
   color: #FFFFFF;
-  width: 60px;
-  height: 60px;
   font-size: 1.8rem;
+  border: none;
+  padding: 18px;
   margin: 3px 5px 3px 3px;
 }
 
 .footer__top-social-icons span {
   display: inline-block;
   border-radius: 10px;
-  padding: 0.45em 0.5em;
   background-color: #545454;
   color: #FFFFFF;
-  width: 60px;
-  height: 60px;
   font-size: 1.8rem;
+  border: none;
+  padding: 18px;
   margin-left: 3px;
 }
 

@@ -268,14 +268,12 @@ background-color: $secondary-color;
 }
 
 .media-icons i{
-    display: inline-block;
-    border-radius: 60px;
-    padding: 0.45em 0.5em;
-    background-color: $base-color;
     color: #FFFFFF;
-    width: 60px;
-    height: 60px;
     font-size: 1.8rem;
+    background-color: $base-color;
+    border-radius: 50%;
+    border: none;
+    padding: 18px;
     &:hover{
         transform: scale(1.1);
         transition: 0.3s ease all;
@@ -292,19 +290,16 @@ background-color: $secondary-color;
 
 
 //CARDS
-.cards-container{
-    align-items: center;
-    margin-top: 3rem;
-}
-
 .card__home-container{
-    display: flex;
-    justify-content: space-evenly;
+  align-items: center;  
+  margin-top: 3rem;  
+  display: flex;
+  justify-content: center;
 }
 
 .card__home{
     border: none;
-    align-items: center;
+     align-items: center;
 }
 
 .card__home-img{
@@ -376,12 +371,11 @@ background-color: $secondary-color;
     i{
         display: inline-block;
         border-radius: 10px;
-        padding: 0.45em 0.5em;
         background-color: $secondary-color;
         color: #FFFFFF;
-        width: 60px;
-        height: 60px;
         font-size: 1.8rem;
+        border: none;
+        padding: 18px;
         margin: 3px 5px 3px 3px;
     }
    
@@ -389,15 +383,14 @@ background-color: $secondary-color;
 
 .footer__top-social-icons {
     span{
-    display: inline-block;
-    border-radius: 10px;
-    padding: 0.45em 0.5em;
-    background-color: $secondary-color;
-    color: #FFFFFF;
-    width: 60px;
-    height: 60px;
-    font-size: 1.8rem;
-    margin-left: 3px;
+        display: inline-block;
+        border-radius: 10px;
+        background-color: $secondary-color;
+        color: #FFFFFF;
+        font-size: 1.8rem;
+        border: none;
+        padding: 18px;
+        margin-left: 3px;
     }
     
 }
