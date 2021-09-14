@@ -103,6 +103,11 @@ a {
   z-index: 8888;
 }
 
+.nav__logo {
+  width: 188.51px !important;
+  height: 75px !important;
+}
+
 .nav__button {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -114,12 +119,13 @@ a {
   color: #FFFFFF;
   padding: 6px 12px 6px 12px;
   font-family: glacial-indifference;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: bold;
   line-height: 24px;
   text-align: center;
   border: none;
   cursor: pointer;
+  margin: 0px 4px;
 }
 
 .nav__button:hover {
@@ -285,9 +291,24 @@ a {
   }
 }
 
+.carousel-container {
+  margin-top: 8%;
+}
+
 .carousel-inner img {
   width: 100%;
   height: 100%;
+}
+
+.carousel .item {
+  height: 100px !important;
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100px;
 }
 
 .carousel-item .img-fluid {
@@ -296,7 +317,7 @@ a {
 }
 
 .carousel-caption {
-  bottom: 100px;
+  bottom: 200px;
 }
 
 .carousel-caption h5 {
@@ -305,7 +326,7 @@ a {
   font-weight: 700;
   line-height: 75px;
   color: #FFFFFF;
-  text-shadow: -4px 3px 0 #FF5757;
+  text-shadow: 0px 4px 30px #000000;
 }
 
 .carousel__button {
@@ -319,7 +340,7 @@ a {
   padding: 3px 12px 3px 12px;
   background: #FFFFFF;
   border-radius: 4px;
-  margin-top: 5rem;
+  margin-top: 0.4rem;
 }
 
 .carousel__button:hover {
@@ -330,11 +351,23 @@ a {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f545454' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  background-image: url("../images/control-prev-icon.svg");
+  margin-left: -7rem !important;
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f545454' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  background-image: url("../images/control-next-icon.svg");
+  margin-right: -7rem !important;
+}
+
+.carousel-indicators li {
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 50% !important;
+}
+
+.carousel-indicators .active {
+  background-color: #FF5757;
 }
 
 .carousel-container .media-icons {
@@ -350,12 +383,12 @@ a {
           flex-direction: column;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  top: 39%;
+  top: 70%;
 }
 
 .media-icons i {
   color: #FFFFFF;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   background-color: #FF5757;
   border-radius: 50%;
   border: none;
@@ -447,9 +480,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .card__home {
@@ -460,11 +495,19 @@ a {
 }
 
 .card__home-img {
+  width: 400px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0.5rem;
+}
+
+.card__home-img:hover {
   background-color: rgba(0, 0, 0, 0.835);
   -webkit-filter: brightness(0.7);
           filter: brightness(0.7);
-  width: 400px;
-  height: 600px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .card__home-title {
@@ -477,6 +520,24 @@ a {
   color: #FFFFFF;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   z-index: 3;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .card__home-img {
+    width: 300px;
+    height: 400px;
+  }
+  .card__home-img:hover {
+    background-color: rgba(0, 0, 0, 0.835);
+    -webkit-filter: brightness(0.7);
+            filter: brightness(0.7);
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+  }
+  .card__home-title {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -524,7 +585,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,6 +667,7 @@ a {
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   z-index: 1;
   margin-top: 6rem !important;
+  cursor: pointer;
 }
 
 .nosotros__info {
@@ -750,7 +811,7 @@ a {
           flex-direction: column;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  top: 39%;
+  top: 70%;
 }
 
 .productos-container .media-icons a:not(:last-child) {
@@ -812,11 +873,6 @@ a {
           align-items: center;
 }
 
-.footer__top p {
-  color: #545454;
-  line-height: 21px;
-}
-
 .footer__top-cart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -830,6 +886,15 @@ a {
   margin-right: 1rem;
 }
 
+.footer__top-cart p {
+  color: #545454;
+  line-height: 21px;
+  font-family: Glacial Indifference;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+}
+
 .footer__top-orders {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -841,6 +906,17 @@ a {
 
 .footer__top-orders img {
   margin-right: 1rem;
+  width: 47.5px;
+  height: 65px;
+}
+
+.footer__top-orders p {
+  color: #545454;
+  line-height: 21px;
+  font-family: Glacial Indifference;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
 }
 
 .footer__top-social-icons {
@@ -857,9 +933,9 @@ a {
   border-radius: 10px;
   background-color: #545454;
   color: #FFFFFF;
-  font-size: 1.8rem;
+  font-size: 2rem;
   border: none;
-  padding: 18px;
+  padding: 15px;
   margin: 3px 5px 3px 3px;
 }
 
@@ -868,9 +944,9 @@ a {
   border-radius: 10px;
   background-color: #545454;
   color: #FFFFFF;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   border: none;
-  padding: 18px;
+  padding: 11px;
   margin-left: 3px;
 }
 
@@ -882,7 +958,8 @@ a {
 
 .footer__bottom {
   background-color: #FF5757;
-  padding: 2rem 5rem 1rem 5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
 }
 
 .footer__bottom-links {
@@ -895,13 +972,13 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-size: 14px;
 }
 
 .footer__bottom-links a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: glacial-indifference;
+  font-size: 14px;
 }
 
 .footer__bottom-links i {
@@ -923,6 +1000,7 @@ a {
   color: #FFFFFF;
   font-family: glacial-indifference;
   font-size: 16px;
+  line-height: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -976,6 +1054,8 @@ a {
   .footer__top-cart img {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+    width: 77.29px;
+    height: 65px;
   }
   .footer__bottom-links {
     -webkit-box-align: center;
