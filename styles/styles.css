@@ -1080,4 +1080,151 @@ a {
     margin-top: 3rem;
   }
 }
+
+.mainPromociones {
+  margin-top: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0;
+  background-image: url("../images/promociones_1.jpg");
+  background-size: cover;
+  min-height: 680px;
+  position: relative;
+}
+
+.mainPromociones h1 {
+  font-family: glacial-indifference;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 64px;
+  line-height: 75px;
+  text-shadow: 0px 4px 30px #000000;
+}
+
+.mainPromociones button {
+  font-family: glacial-indifference;
+  font-style: normal;
+  font-weight: 700;
+  color: #545454;
+  font-size: 24px;
+  line-height: 24px;
+  width: 182px;
+  height: 38px;
+  padding: 12px 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F3EFEE;
+  border: 1px solid #F3EFEE;
+  margin-top: 10px;
+}
+
+.mainPromociones button:hover {
+  background: #545454;
+  border: 1px solid #545454;
+  color: #FFFFFF;
+}
+
+#icons {
+  position: fixed;
+  right: 72px;
+  top: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#icons a {
+  margin: 10px;
+}
+
+#corporativoContenedor {
+  margin-top: 105px;
+  width: 100%;
+  height: 904px;
+  background-image: url("../images/gifCorporativo.gif");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#corporativoContenedor h1 {
+  font-family: glacial-indifference;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 30px #000000;
+}
+
+#corporativoContenedor button {
+  font-family: glacial-indifference;
+  font-style: normal;
+  font-weight: 700;
+  color: #545454;
+  font-size: 24px;
+  line-height: 24px;
+  width: 240px;
+  height: 38px;
+  padding: 12px 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F3EFEE;
+  border: 1px solid #F3EFEE;
+  margin-top: 10px;
+}
+
+#corporativoContenedor button:hover {
+  background: #545454;
+  border: 1px solid #545454;
+  color: #FFFFFF;
+}
+
+#mainContacto {
+  margin-top: 105px;
+}
 /*# sourceMappingURL=styles.css.map */
