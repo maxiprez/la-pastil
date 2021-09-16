@@ -25,11 +25,10 @@
 </head>
 
 <body>
-
     <header class="l-header">
         <nav class="nav">
             <div>
-                <a href="#" class="nav__logo"> <img src="../images/logo.png" alt="Logo"> </a>
+                <a href="../index.html" class="nav__logo"> <img src="../images/logo.svg" alt="Logo"> </a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -47,30 +46,28 @@
                 <i class='bx bx-menu'></i>
             </div>
 
-            <button class="nav__button">¡Pide aquí!</button>
+            <a href="./tutorialPedido.html" class="nav__button" id="navButton">¡Pide aquí!</a>
         </nav>
     </header>
 
-    <!-- main -->
-    <main>
+    <!-- PROMOCIONES SECTION -->
+    <section class="promociones-container">
         <div class="button-container mainPromociones container-fluid">
             <h1 class="mainpromociones__titulo">Conoce nuestras promociones</h1>
-            <button type="button" class="btn btn-light">¡Haz clic aquí!</button>
+            <a href="#" class="promociones__button">¡Haz clic aquí!</a>
+            <!-- <button type="button" class="btn btn-light"></button> -->
         </div>
-        <div class="media-icons" id="icons">
-            <a href="https://wa.me/+51933515650?text=Me%20interesa%20algún%20producto%20que%20estás%20vendiendo"
-                target="_blank">
+        <div class="media-icons">
+            <a href="https://wa.me/+51933515650?text=Me%20interesa%20algún%20producto%20que%20estás%20vendiendo" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-whatsapp zoom"></i>
             </a>
-            <a href="https://www.instagram.com/lapastil/" target="_blank">
-                <i class="fab fa-instagram zoom"></i>
+            <a href="https://www.instagram.com/lapastil/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram zoom"></i>
             </a>
         </div>
+    </section>
 
-    </main>
-
-
-
+<!-- FOOTER -->
     <footer class="footer-container" id="footer">
         <div class="footer__top">
             <div class="footer__top-orders">
@@ -89,23 +86,19 @@
             <div class="footer__top-social-icons">
                 <a href="https://www.facebook.com/lapastil/" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.instagram.com/lapastil/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@lapastil?" target="_blank"><span
-                        class="material-icons">tiktok</span></a>
+                <a href="https://www.tiktok.com/@lapastil?" target="_blank"><span class="material-icons">tiktok</span></a>
             </div>
         </div>
         <div class="footer__bottom">
             <div class="footer__bottom-links">
-                <a href="#">Nosotros</a>
-                <a href="#">Productos</a>
-                <a href="#">Promociones</a>
-                <a href="#">Corporativo</a>
-                <a href="#">Términos y condiciones</a>
-                <a href="https://wa.me/+51933515650?text=Me%20interesa%20algún%20producto%20que%20estás%20vendiendo"
-                    target="_blank" class="footer__bottom-links-social"><i class="fab fa-whatsapp m-2"></i>933 515
-                    650</a>
-                <a href="mailto:info@lapastil.com" class="footer__bottom-links-social"><i
-                        class="far fa-envelope m-2"></i>info@lapastil.com</a>
-                <a href="#"><img src="../images/Logo-Footer.png" alt=""></a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./promociones.html">Promociones</a>
+                <a href="./corporativo.html">Corporativo</a>
+                <a href="./terminosYCondiciones.html">Términos y condiciones</a>
+                <a href="https://wa.me/+51933515650?text=Me%20interesa%20algún%20producto%20que%20estás%20vendiendo" target="_blank" rel="noopener noreferrer" class="footer__bottom-links-social"><i class="fab fa-whatsapp m-2"></i>933 515 650</a>
+                <a href="mailto:info@lapastil.com" class="footer__bottom-links-social"><i class="far fa-envelope m-2"></i>info@lapastil.com</a>
+                <a href="../index.html"><img src="../images/logo-footer.svg" alt=""></a>
             </div>
             <div class="footer__bottom-copyright">
                 <p>© La Pastil</p>
@@ -114,12 +107,8 @@
     </footer>
 
     <!-- JS BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <!--  JS LOCAL -->
     <script src="../js/main.js" defer></script>
 </body>

@@ -26,3 +26,19 @@ function linkAction(){
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
+/* REMOVE FIXED MEDIA-ICONS */
+window.addEventListener('scroll', function(e) {
+    e.preventDefault();
+      let socialIcons =  document.getElementById('social-icons');
+      if (window.scrollY >= 1000) {
+        socialIcons.classList.remove('fixed');
+        socialIcons.classList.add('media__icons-footer');
+      } else {
+        socialIcons.classList.add('fixed');
+        socialIcons.classList.remove('media__icons-footer');
+      }
+    });
+
+    window.onbeforeunload = function () {
+     window.scrollTo(0, 20);
+      }

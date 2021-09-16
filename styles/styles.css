@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: glacial-indifference;
   src: url("../fonts/glacial-indifference.bold.otf"), url("../fonts/glacial-indifference.regular.otf");
@@ -44,13 +45,13 @@ html {
   scroll-behavior: smooth;
 }
 
-ul {
+.nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-li {
+.nav__item {
   font-family: glacial-indifference;
   color: #545454;
   font-size: 18px;
@@ -158,6 +159,11 @@ a {
 .nav__link {
   position: relative;
   color: #fff;
+  font-family: Glacial Indifference;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .nav__link:hover {
@@ -171,7 +177,7 @@ a {
   position: absolute;
   content: "";
   width: 100%;
-  height: 0.1rem;
+  height: 0.01rem;
   left: 0;
   top: 1.2rem;
   background-color: #545454;
@@ -188,7 +194,7 @@ a {
   position: absolute;
   content: "";
   width: 100%;
-  height: 0.1rem;
+  height: 0.01rem;
   left: 0;
   top: 1.2rem;
   background-color: #545454;
@@ -329,7 +335,7 @@ a {
   text-shadow: 0px 4px 30px #000000;
 }
 
-.carousel__button {
+.carousel__button-home {
   text-align: center;
   border: none;
   color: #545454;
@@ -337,13 +343,13 @@ a {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  padding: 3px 12px 3px 12px;
+  line-height: 24px;
+  padding: 6px 12px;
   background: #FFFFFF;
   border-radius: 4px;
-  margin-top: 0.4rem;
 }
 
-.carousel__button:hover {
+.carousel__button-home:hover {
   background: #545454;
   color: #FFFFFF;
   -webkit-transition: 0.3s ease all;
@@ -371,9 +377,11 @@ a {
 }
 
 .carousel-container .media-icons {
-  z-index: 999;
+  position: absolute;
+  z-index: 50;
   position: fixed;
-  right: 30px;
+  right: 100px;
+  left: 94% !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,7 +391,15 @@ a {
           flex-direction: column;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  top: 70%;
+  top: 75%;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+.media__icons-footer {
+  top: 35% !important;
 }
 
 .media-icons i {
@@ -986,6 +1002,11 @@ a {
   font-size: 1.5rem;
 }
 
+.footer__bottom-links img {
+  width: 186px;
+  height: 84px;
+}
+
 .footer__bottom-links-social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1103,6 +1124,31 @@ a {
   position: relative;
 }
 
+.promociones-container .media-icons {
+  z-index: 999;
+  position: fixed;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  top: 70%;
+}
+
+.promociones-container .media-icons a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.promociones-container .media-icons a:hover {
+  -webkit-transition: scale(1.3);
+  transition: scale(1.3);
+}
+
 .mainPromociones h1 {
   font-family: glacial-indifference;
   font-style: normal;
@@ -1113,34 +1159,33 @@ a {
   text-shadow: 0px 4px 30px #000000;
 }
 
-.mainPromociones button {
-  font-family: glacial-indifference;
-  font-style: normal;
-  font-weight: 700;
-  color: #545454;
-  font-size: 24px;
-  line-height: 24px;
-  width: 182px;
-  height: 38px;
-  padding: 12px 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.promociones__button {
+  border: 1px solid #F3EFEE;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #F3EFEE;
-  border: 1px solid #F3EFEE;
-  margin-top: 10px;
+  padding: 6px 12px;
+  position: absolute;
+  background-color: #F3EFEE;
+  font-family: Glacial Indifference;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  top: 57%;
+  color: #545454;
+  text-decoration: none;
 }
 
-.mainPromociones button:hover {
+.promociones__button:hover {
+  border: #545454;
   background: #545454;
-  border: 1px solid #545454;
-  color: #FFFFFF;
+  color: #F3EFEE;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 #icons {
@@ -1184,6 +1229,31 @@ a {
           align-items: center;
 }
 
+.corporativo-container .media-icons {
+  z-index: 999;
+  position: fixed;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  top: 70%;
+}
+
+.corporativo-container .media-icons a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.corporativo-container .media-icons a:hover {
+  -webkit-transition: scale(1.3);
+  transition: scale(1.3);
+}
+
 #corporativoContenedor h1 {
   font-family: glacial-indifference;
   font-style: normal;
@@ -1194,37 +1264,252 @@ a {
   text-shadow: 0px 4px 30px #000000;
 }
 
-#corporativoContenedor button {
-  font-family: glacial-indifference;
+.corporativo__button {
+  border: 1px solid #F3EFEE;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 12px;
+  position: absolute;
+  background-color: #F3EFEE;
+  font-family: Glacial Indifference;
   font-style: normal;
-  font-weight: 700;
-  color: #545454;
+  font-weight: bold;
   font-size: 24px;
   line-height: 24px;
-  width: 240px;
-  height: 38px;
-  padding: 12px 6px;
+  top: 87%;
+  color: #545454;
+  text-decoration: none;
+}
+
+.corporativo__button:hover {
+  border: #545454;
+  background: #545454;
+  color: #F3EFEE;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+#mainContacto {
+  margin-top: 105px;
+}
+
+/* SECTION TUTORIAL PEDIDOS */
+.tutorial-pedidos-container {
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tutorial-pedidos__title {
+  color: #FF5757;
+  font-family: Glacial Indifference;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 70px;
+}
+
+.card {
+  border: none;
+}
+
+.tutorial-pedidos__card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.tutorial-pedidos__card {
+  width: 400px;
+  height: 300px;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tutorial-pedidos__card p {
+  font-family: Glacial Indifference;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 25px;
+  text-align: center;
+  color: #545454;
+}
+
+.tutorial-pedidos__card {
+  border: none !important;
+}
+
+.tutorial-pedidos__card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tutorial-pedidos__card-top h5 {
+  color: #545454;
+  font-family: Glacial Indifference;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 50px;
+  margin-right: 7rem;
+  margin-bottom: 3rem;
+}
+
+.tutorial-pedidos__img1 {
+  position: absolute;
+  width: 106.71px;
+  height: 81.3px;
+}
+
+.tutorial-pedidos__img2 {
+  position: absolute;
+  width: 81.3px;
+  height: 81.3px;
+}
+
+.tutorial-pedidos__img3 {
+  position: absolute;
+  width: 79.15px;
+  height: 81.3px;
+}
+
+.tutorial-pedidos__img4 {
+  position: absolute;
+  width: 96.79px;
+  height: 67.75px;
+}
+
+.tutorial-pedidos__img5 {
+  position: absolute;
+  width: 102.36px;
+  height: 67.75px;
+}
+
+/* TÉRMINOS Y CONDICIONES SECTION */
+.terminosYcondiciones-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10rem 2rem 2rem 2rem;
+}
+
+.terminosYcondiciones__title h1 {
+  color: #FF5757;
+  font-family: Glacial Indifference;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #F3EFEE;
-  border: 1px solid #F3EFEE;
-  margin-top: 10px;
+  margin-right: 3rem;
+  text-align: right;
+  text-transform: uppercase;
 }
 
-#corporativoContenedor button:hover {
-  background: #545454;
-  border: 1px solid #545454;
-  color: #FFFFFF;
+.terminosYcondiciones__text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#mainContacto {
-  margin-top: 105px;
+.terminosYcondiciones__text h6 {
+  color: #545454;
+  font-family: Glacial Indifference;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+}
+
+.terminosYcondiciones__text p {
+  color: #545454;
+  font-family: Glacial Indifference;
+  font-style: normal;
+}
+
+.terminosYcondiciones__text ul {
+  color: #545454;
+  font-family: Glacial Indifference;
+  font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .terminosYcondiciones-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .terminosYcondiciones__title h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
