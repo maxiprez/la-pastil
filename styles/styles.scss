@@ -1,12 +1,17 @@
-@font-face {
-    font-family: glacial-indifference;
-    src: url('../fonts/glacial-indifference.bold.otf'), url('../fonts/glacial-indifference.regular.otf');
-}
+ @font-face {
+        font-family: 'glacial-indifference';
+        src:   url('../fonts/glacial-indifference.regular-webfont.woff2') format('woff2'),
+               url('../fonts/glacial-indifference.bold-webfont.woff2') format('woff2'),
+               url('../fonts/glacial-indifference.regular-webfont.woff') format('woff'),
+               url('../fonts/glacial-indifference.bold-webfont.woff') format('woff'),
+               url('../fonts/glacial-indifference.regular.otf') format('otf'),
+               url('../fonts/glacial-indifference.bold.otf') format('otf');
+      }
 
-@font-face {
-    font-family: HomemadeApple-Regular;
-    src: url('../fonts/HomemadeApple-Regular.ttf');
-}
+// @font-face {
+//     font-family: "HomemadeApple-Regular";
+//     src: url("../fonts/HomemadeApple-Regular.ttf");
+// }
 
 /* VARIABLES */
 $base-color: #FF5757;
@@ -40,7 +45,7 @@ $secondary-color: #545454;
     margin-top: 3rem !important;
 }
 
-
+ 
 
 Resources
 /* BASE */
