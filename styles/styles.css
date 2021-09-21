@@ -1,12 +1,7 @@
 @charset "UTF-8";
 @font-face {
-  font-family: glacial-indifference;
-  src: url("../fonts/glacial-indifference.bold.otf"), url("../fonts/glacial-indifference.regular.otf");
-}
-
-@font-face {
-  font-family: HomemadeApple-Regular;
-  src: url("../fonts/HomemadeApple-Regular.ttf");
+  font-family: 'glacial-indifference';
+  src: url("../fonts/glacial-indifference.regular-webfont.woff2") format("woff2"), url("../fonts/glacial-indifference.bold-webfont.woff2") format("woff2"), url("../fonts/glacial-indifference.regular-webfont.woff") format("woff"), url("../fonts/glacial-indifference.bold-webfont.woff") format("woff"), url("../fonts/glacial-indifference.regular.otf") format("otf"), url("../fonts/glacial-indifference.bold.otf") format("otf");
 }
 
 /* VARIABLES */
@@ -129,7 +124,7 @@ a {
   padding: 5px 10px;
   font-family: glacial-indifference;
   font-size: 16px;
-  font-weight: bold;
+  font-style: normal;
   line-height: 24px;
   text-align: center;
   border: none;
@@ -385,11 +380,19 @@ a {
 }
 
 /* MEDIA ICONS */
-.fixed {
+.fixed-1 {
   position: fixed !important;
 }
 
-.media__icons-footer {
+.media__icons-footer-1 {
+  top: 30% !important;
+}
+
+.fixed-2 {
+  position: fixed !important;
+}
+
+.media__icons-footer-2 {
   top: 30% !important;
 }
 
