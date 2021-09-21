@@ -26,7 +26,7 @@ function linkAction(){
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/* REMOVE FIXED MEDIA-ICONS */
+/* REMOVE FIXED MEDIA-ICONS (INDEX - NOSOTROS - TYC)*/
 window.addEventListener('scroll', function() {
    
       let socialIconsHome =  document.getElementById('home__social-icons');     
@@ -38,5 +38,18 @@ window.addEventListener('scroll', function() {
         socialIconsHome.classList.remove('media__icons-footer');        
       }
     });
+
+/* REMOVE FIXED MEDIA-ICONS (RESTO DE LAS PAGINAS)*/
+window.addEventListener('scroll', function() {
+   
+  let socialIconsHome =  document.getElementById('scroller__social-icons');     
+  if (window.scrollY >= 300) {
+    socialIconsHome.classList.remove('fixed');
+    socialIconsHome.classList.add('media__icons-footer');       
+  } else {
+    socialIconsHome.classList.add('fixed');
+    socialIconsHome.classList.remove('media__icons-footer');        
+  }
+});
 
   
