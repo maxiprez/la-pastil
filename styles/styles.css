@@ -1,9 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'glacial-indifference';
-  src: url("../fonts/glacial-indifference.regular-webfont.woff2") format("woff2"), url("../fonts/glacial-indifference.bold-webfont.woff2") format("woff2"), url("../fonts/glacial-indifference.regular-webfont.woff") format("woff"), url("../fonts/glacial-indifference.bold-webfont.woff") format("woff"), url("../fonts/glacial-indifference.regular.otf") format("otf"), url("../fonts/glacial-indifference.bold.otf") format("otf");
-}
-
 /* VARIABLES */
 .mt-5 {
   margin-top: 5rem;
@@ -54,12 +49,6 @@ html {
   list-style: none;
 }
 
-.nav__item {
-  font-family: glacial-indifference;
-  color: #545454;
-  font-size: 18px;
-}
-
 a {
   text-decoration: none;
 }
@@ -92,7 +81,7 @@ a {
 .nav {
   position: relative;
   margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   height: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,7 +97,7 @@ a {
 }
 
 .nav__logo {
-  width: 188.51px !important;
+  width: 189px !important;
   height: 75px !important;
 }
 
@@ -122,7 +111,7 @@ a {
   background-color: #FF5757;
   color: #FFFFFF;
   padding: 5px 10px;
-  font-family: glacial-indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-size: 16px;
   font-style: normal;
   line-height: 24px;
@@ -162,11 +151,11 @@ a {
 .nav__link {
   position: relative;
   color: #fff;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 27px;
 }
 
 .nav__link:hover {
@@ -182,7 +171,7 @@ a {
   width: 100%;
   height: 0.01rem;
   left: 0;
-  top: 1.2rem;
+  top: 1rem;
   background-color: #545454;
 }
 
@@ -199,7 +188,7 @@ a {
   width: 100%;
   height: 0.01rem;
   left: 0;
-  top: 1.2rem;
+  top: 1rem;
   background-color: #545454;
 }
 
@@ -330,9 +319,9 @@ a {
 }
 
 .carousel-caption h5 {
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-size: 57px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 75px;
   color: #FFFFFF;
   text-shadow: 0px 4px 30px #000000;
@@ -342,9 +331,9 @@ a {
   text-align: center;
   border: none;
   color: #545454;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   line-height: 21px;
   padding: 6px 12px;
@@ -480,14 +469,14 @@ a {
 }
 
 .carousel__nosotros-title {
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: -40%;
   left: -15%;
   position: absolute;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 57px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -539,8 +528,8 @@ a {
 .card__home-title {
   position: absolute;
   text-transform: uppercase;
-  font-family: Glacial Indifference;
-  font-weight: bold;
+  font-family: 'Glacial Indifference', sans-serif;
+  font-weight: 700;
   font-size: 33px;
   line-height: 67.5px;
   color: #FFFFFF;
@@ -567,8 +556,8 @@ a {
   .card__home-title {
     position: absolute;
     text-transform: uppercase;
-    font-family: Glacial Indifference;
-    font-weight: bold;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-weight: 700;
     font-size: 28px;
     line-height: 75px;
     color: #FFFFFF;
@@ -608,8 +597,8 @@ a {
   .card__home-title {
     position: absolute;
     text-transform: uppercase;
-    font-family: Glacial Indifference;
-    font-weight: bold;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-weight: 700;
     font-size: 30px;
     line-height: 75px;
     color: #FFFFFF;
@@ -684,8 +673,8 @@ a {
 .card__productos-title {
   position: absolute;
   text-transform: uppercase;
-  font-family: Glacial Indifference;
-  font-weight: bold;
+  font-family: 'Glacial Indifference', sans-serif;
+  font-weight: 700;
   font-size: 32px;
   line-height: 67.5px;
   color: #FFFFFF;
@@ -696,9 +685,9 @@ a {
 }
 
 .card__productos-button {
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -752,8 +741,8 @@ a {
   .card__productos-title {
     position: absolute;
     text-transform: uppercase;
-    font-family: Glacial Indifference;
-    font-weight: bold;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-weight: 700;
     font-size: 28px;
     line-height: 75px;
     color: #FFFFFF;
@@ -782,8 +771,8 @@ a {
   .card__productos-title {
     position: absolute;
     text-transform: uppercase;
-    font-family: Glacial Indifference;
-    font-weight: bold;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-weight: 700;
     font-size: 28px;
     line-height: 75px;
     color: #FFFFFF;
@@ -801,6 +790,7 @@ a {
 
 .nosotros__info p {
   color: #545454;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -829,9 +819,9 @@ a {
 
 .nosotros__info-title {
   color: #FF5757;
-  font-family: glacial-indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 72px;
   line-height: 50px;
   display: -webkit-box;
@@ -914,9 +904,9 @@ a {
 }
 
 .productos__title h1 {
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 48px;
   line-height: 50px;
   color: #FF5757;
@@ -989,7 +979,7 @@ a {
 .footer__top-cart p {
   color: #545454;
   line-height: 21px;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
@@ -1013,7 +1003,7 @@ a {
 .footer__top-orders p {
   color: #545454;
   line-height: 21px;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
@@ -1033,9 +1023,9 @@ a {
   border-radius: 10px;
   background-color: #545454;
   color: #FFFFFF;
-  font-size: 2rem;
+  font-size: 1.7rem;
   border: none;
-  padding: 15px;
+  padding: 12px;
   margin: 3px 5px 3px 3px;
 }
 
@@ -1046,7 +1036,7 @@ a {
   color: #FFFFFF;
   font-size: 2.5rem;
   border: none;
-  padding: 11px;
+  padding: 5px;
   margin-left: 3px;
 }
 
@@ -1058,7 +1048,7 @@ a {
 
 .footer__bottom {
   background-color: #FF5757;
-  padding-top: 0.1rem;
+  padding-top: 1.3rem;
   padding-bottom: 0.1rem;
 }
 
@@ -1066,31 +1056,39 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__bottom-links a {
   text-decoration: none;
   color: #FFFFFF;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
+  font-weight: 700;
   font-size: 14px;
   line-height: 30px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .footer__bottom-links i {
   color: #FFFFFF;
   font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .footer__bottom-links img {
-  width: 167.4px !important;
-  height: 75.6px !important;
+  width: 151.4px !important;
+  height: 68px !important;
 }
 
 .footer__bottom-links-social {
@@ -1102,13 +1100,18 @@ a {
           align-items: center;
 }
 
+.footer__bottom-links-social i {
+  margin-right: 0.3rem !important;
+}
+
 .footer__bottom-copyright p {
   text-align: center;
   color: #FFFFFF;
-  font-family: glacial-indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-size: 16px;
   line-height: 30px;
   font-style: normal;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
@@ -1205,19 +1208,28 @@ a {
           align-items: center;
   padding-bottom: 0;
   background-image: url("../images/promociones_1.jpg");
-  background-size: cover;
+  margin-top: 0px;
+  padding-top: 60px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
   min-height: 100vh;
-  position: relative;
+  width: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .mainPromociones h1 {
-  font-family: glacial-indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   color: #FFFFFF;
   font-size: 57px;
   line-height: 67px;
   text-shadow: 0px 4px 30px #000000;
+  position: absolute;
 }
 
 .promociones__button {
@@ -1231,11 +1243,12 @@ a {
   padding: 6px 12px;
   position: absolute;
   background-color: #F3EFEE;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   line-height: 21px;
+  margin-top: 2rem;
   top: 57%;
   color: #545454;
   text-decoration: none;
@@ -1270,8 +1283,7 @@ a {
 }
 
 .corporativo-container {
-  margin-top: 105px;
-  width: 100%;
+  margin-top: 7rem !important;
   background-image: url("../images/gifCorporativo.gif");
   background-size: cover;
   display: -webkit-box;
@@ -1287,19 +1299,29 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 0;
-  min-height: 680px;
   position: relative;
+  margin-top: 0px;
+  padding-top: 60px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 100vh;
+  width: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .corporativo-container h1 {
-  font-family: glacial-indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   color: #FFFFFF;
   font-size: 64px;
   line-height: 75px;
   text-shadow: 0px 4px 30px #000000;
+  position: absolute;
 }
 
 .corporativo__button {
@@ -1313,12 +1335,12 @@ a {
   padding: 6px 12px;
   position: absolute;
   background-color: #F3EFEE;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif !important;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700 !important;
   font-size: 24px;
   line-height: 24px;
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   color: #545454;
   text-decoration: none;
 }
@@ -1344,7 +1366,7 @@ a {
 }
 
 .corporativo__title {
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-size: 64px;
   font-weight: 700;
   line-height: 75px;
@@ -1363,9 +1385,9 @@ a {
   padding: 6px 12px;
   position: absolute;
   background-color: #F3EFEE;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   top: 50%;
@@ -1409,9 +1431,9 @@ a {
 
 .tutorial-pedidos__title {
   color: #FF5757;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 57px;
   line-height: 63px;
 }
@@ -1458,7 +1480,7 @@ a {
 }
 
 .tutorial-pedidos__card p {
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
@@ -1489,9 +1511,9 @@ a {
 
 .tutorial-pedidos__card-top h5 {
   color: #545454;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 50px;
   margin-right: 8rem;
@@ -1545,9 +1567,9 @@ a {
 
 .terminosYcondiciones__title h1 {
   color: #FF5757;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 48px;
   line-height: 50px;
   display: -webkit-box;
@@ -1569,22 +1591,22 @@ a {
 
 .terminosYcondiciones__text h6 {
   color: #545454;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 25px;
 }
 
 .terminosYcondiciones__text p {
   color: #545454;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
 }
 
 .terminosYcondiciones__text ul {
   color: #545454;
-  font-family: Glacial Indifference;
+  font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
 }
 
