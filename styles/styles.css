@@ -142,6 +142,11 @@ a {
     -webkit-transition: .5s;
     transition: .5s;
   }
+  .nav {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .nav__item {
@@ -911,7 +916,7 @@ a {
   line-height: 50px;
   color: #FF5757;
   margin-top: 8% !important;
-  margin-right: 2rem;
+  margin-right: 5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -941,6 +946,19 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .productos__title h1 {
+    font-family: 'Glacial Indifference', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    color: #FF5757;
+    margin-top: 8% !important;
+    margin-right: 0px !important;
   }
 }
 
@@ -1409,7 +1427,7 @@ a {
 
 /* SECTION TUTORIAL PEDIDOS */
 .tutorial-pedidos-container {
-  margin-top: 7rem;
+  margin-top: 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1434,8 +1452,8 @@ a {
   font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 57px;
-  line-height: 63px;
+  font-size: 51.3px;
+  line-height: 56.7px;
 }
 
 .card {
@@ -1477,14 +1495,15 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 2rem -2rem -2rem -2rem;
 }
 
 .tutorial-pedidos__card p {
   font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 19px;
-  line-height: 25px;
+  font-size: 17px;
+  line-height: 22.5px;
   text-align: center;
   color: #545454;
 }
@@ -1514,40 +1533,49 @@ a {
   font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 50px;
+  font-size: 21px;
+  line-height: 45px;
   margin-right: 8rem;
   margin-bottom: 3rem;
 }
 
 .tutorial-pedidos__img1 {
   position: absolute;
-  width: 106.71px;
-  height: 81.3px;
+  width: 96px;
+  height: 73px;
 }
 
 .tutorial-pedidos__img2 {
   position: absolute;
-  width: 81.3px;
-  height: 81.3px;
+  width: 73.17px;
+  height: 73.17px;
 }
 
 .tutorial-pedidos__img3 {
   position: absolute;
-  width: 79.15px;
-  height: 81.3px;
+  width: 71.235px;
+  height: 73.17px;
 }
 
 .tutorial-pedidos__img4 {
   position: absolute;
-  width: 96.79px;
-  height: 67.75px;
+  width: 87.12px;
+  height: 61px;
 }
 
 .tutorial-pedidos__img5 {
   position: absolute;
-  width: 102.36px;
-  height: 67.75px;
+  width: 92.12px;
+  height: 61px;
+}
+
+@media screen and (max-width: 768px) {
+  .tutorial-pedidos__cards__bottom-container {
+    margin-top: -2rem;
+  }
+  .tutorial-pedidos__card {
+    margin-top: 1rem !important;
+  }
 }
 
 /* TÉRMINOS Y CONDICIONES SECTION */
