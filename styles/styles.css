@@ -97,8 +97,8 @@ a {
 }
 
 .nav__logo {
-  width: 189px !important;
-  height: 75px !important;
+  width: 189px;
+  height: 75px;
 }
 
 .nav__button {
@@ -204,7 +204,7 @@ a {
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   body {
     margin: 0;
   }
@@ -233,17 +233,16 @@ a {
   }
 }
 
-@media screen and (max-width: 999px) {
-  .nav__logo {
-    width: 150px;
-    height: 55px;
-  }
-  .nav__button {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 999px){
+    .nav__logo{
+        width: 150px;
+        height: 55px;
+    }
+    .nav__button{
+        display: block;
+    }
+  }*/
+@media screen and (max-width: 800px) {
   .nav__logo {
     width: 150px;
     height: 55px;
@@ -320,7 +319,7 @@ a {
   height: 100vh;
 }
 
-.carousel-caption {
+.carousel__home-caption {
   bottom: 200px;
 }
 
@@ -392,6 +391,11 @@ a {
     width: 20px;
     height: 20px;
   }
+  .carousel__home-caption h5 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+  }
 }
 
 .carousel-indicators li {
@@ -410,7 +414,7 @@ a {
 }
 
 .media__icons-footer-1 {
-  top: 30% !important;
+  top: 55% !important;
 }
 
 .fixed-2 {
@@ -418,7 +422,7 @@ a {
 }
 
 .media__icons-footer-2 {
-  top: 30% !important;
+  top: 55% !important;
 }
 
 .media-icons {
@@ -471,46 +475,18 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: -25% !important;
+    margin-top: -70% !important;
     left: -18% !important;
     line-height: 40px !important;
   }
-  .carousel__home-title {
-    font-size: 45px !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 50% !important;
-    line-height: 40px !important;
-  }
-  .carousel__button-home {
-    margin-top: 60% !important;
+  .carousel__home-caption {
+    bottom: 100px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .carousel-container {
-    margin-top: 15%;
-  }
-  .carousel__nosotros-title {
-    font-size: 30px !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: -20% !important;
-    left: -18% !important;
-    line-height: 40px !important;
-  }
-  .carousel__home-title {
-    font-size: 45px !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 20% !important;
-    line-height: 40px !important;
-  }
-  .carousel__button-home {
-    margin-top: 50% !important;
+    margin-top: 10%;
   }
 }
 
@@ -544,6 +520,12 @@ a {
   }
 }
 
+@media screen and (max-width: 411px) {
+  .carousel-container {
+    margin-top: 20%;
+  }
+}
+
 .carousel__nosotros-title {
   margin-top: -40%;
   left: -15%;
@@ -556,6 +538,10 @@ a {
   line-height: 75px;
   text-shadow: 0px 4px 30px #000000;
   position: absolute;
+}
+
+.carousel__nosotros-caption {
+  top: 25rem !important;
 }
 
 .card__home-container {
@@ -984,7 +970,8 @@ a {
   line-height: 50px;
   color: #FF5757;
   margin-top: 8% !important;
-  margin-right: 5rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1027,6 +1014,7 @@ a {
     color: #FF5757;
     margin-top: 8% !important;
     margin-right: 0px !important;
+    margin-left: 0px !important;
   }
 }
 
@@ -1427,6 +1415,7 @@ a {
   line-height: 75px;
   text-shadow: 0px 4px 30px #000000;
   position: absolute;
+  margin-bottom: 2rem;
 }
 
 .corporativo__button {
@@ -1463,8 +1452,9 @@ a {
     margin-top: -2rem !important;
   }
   .corporativo-container h1 {
-    font-size: 40px;
-    line-height: 30px;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 1rem !important;
   }
 }
 
@@ -1673,6 +1663,11 @@ a {
   .tutorial-pedidos__card {
     margin-top: 1rem !important;
   }
+  .tutorial-pedidos__title {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 2rem;
+  }
 }
 
 /* TÉRMINOS Y CONDICIONES SECTION */
@@ -1762,6 +1757,8 @@ a {
             align-items: center;
     text-align: center;
     margin-bottom: 2rem;
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 
@@ -1885,7 +1882,7 @@ a {
 }
 
 #contenedorContacto__p p {
-  margin-bottom: 18px;
+  margin-bottom: 27px;
 }
 
 #contenedorContacto__buttons {
@@ -2015,6 +2012,7 @@ a {
   }
   #inputEnviar {
     left: 0px !important;
+    height: 30px !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
