@@ -233,15 +233,6 @@ a {
   }
 }
 
-/*@media screen and (max-width: 999px){
-    .nav__logo{
-        width: 150px;
-        height: 55px;
-    }
-    .nav__button{
-        display: block;
-    }
-  }*/
 @media screen and (max-width: 800px) {
   .nav__logo {
     width: 150px;
@@ -414,7 +405,7 @@ a {
 }
 
 .media__icons-footer-1 {
-  top: 55% !important;
+  top: 30% !important;
 }
 
 .fixed-2 {
@@ -422,7 +413,7 @@ a {
 }
 
 .media__icons-footer-2 {
-  top: 55% !important;
+  top: 30% !important;
 }
 
 .media-icons {
@@ -471,11 +462,11 @@ a {
     margin-top: 15%;
   }
   .carousel__nosotros-title {
-    font-size: 45px !important;
+    font-size: 40px !important;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: -70% !important;
+    margin-top: -80% !important;
     left: -18% !important;
     line-height: 40px !important;
   }
@@ -495,7 +486,8 @@ a {
     margin-top: 20%;
   }
   .carousel__nosotros-title {
-    font-size: 25px !important;
+    margin-top: -80% !important;
+    font-size: 20px !important;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -514,7 +506,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 20% !important;
+    margin-top: -50% !important;
     left: -18% !important;
     line-height: 10px !important;
   }
@@ -527,16 +519,16 @@ a {
 }
 
 .carousel__nosotros-title {
-  margin-top: -40%;
+  margin-top: -45%;
   left: -15%;
   position: absolute;
   font-style: normal;
   font-family: 'Glacial Indifference', sans-serif;
   font-weight: 700;
   color: #FFFFFF;
-  font-size: 64px;
-  line-height: 75px;
-  text-shadow: 0px 4px 30px #000000;
+  font-size: 57.6px;
+  line-height: 67.5px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: absolute;
 }
 
