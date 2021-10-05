@@ -302,7 +302,7 @@ background-color: $secondary-color;
 
 //CARROUSEL HOME
 .carousel-container{
-    // margin-top: 0%;
+     margin-top: 8%;
 }
 
 .carousel-inner{
@@ -472,7 +472,7 @@ background-color: $secondary-color;
 
   @media screen and (max-width: 900px){
     .carousel-container{
-        margin-top: 5%;
+        margin-top: 10%;
     }
    .carousel__nosotros-title{
         font-size: 40px !important;
@@ -489,14 +489,14 @@ background-color: $secondary-color;
 
 @media screen and (max-width: 768px){
     .carousel-container{
-        margin-top: 5%;
+        margin-top: 15%;
     }
     
 }
 
 @media screen and (max-width: 576px){
     .carousel-container{
-        margin-top: 5%;
+        margin-top: 22%;
     }
     .carousel__nosotros-title{
         margin-top: -80% !important;
@@ -510,7 +510,7 @@ background-color: $secondary-color;
 
 @media screen and (max-width: 468px){
     .carousel-container{
-        margin-top: 5%;
+        margin-top: 22%;
     }
     .carousel__nosotros-title{
         font-size: 20px !important;
@@ -523,7 +523,7 @@ background-color: $secondary-color;
 
  @media screen and (max-width: 411px){
      .carousel-container{
-         margin-top: 5%;
+         margin-top: 27%;
      }
  }
 
