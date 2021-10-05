@@ -1,6 +1,7 @@
 /* VARIABLES */
 $base-color: #FF5757;
 $secondary-color: #545454;
+$white-color: #FFFFFF;
 
 .mt-5{
     margin-top: 5rem;
@@ -32,7 +33,7 @@ $secondary-color: #545454;
 
  
 
-Resources
+
 /* BASE */
 *,::before,::after{
     box-sizing: border-box;
@@ -120,13 +121,51 @@ a{
     }
 }
 
+.nav__link{
+    position: relative;
+    color: $secondary-color;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    &:hover{
+        position: relative;
+        transition: .2s ease all;
+        color: $secondary-color;
+    }
+}
 
-@media screen and (max-width: 768px){
+
+.fa-times{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .nav__button{
+        align-items: center;
+        width: 129.6px;
+        height: 29.1px;
+        padding: 1px 10px;
+    }
+    .nav__logo{
+        width: 170.1px;
+        height: 67.5px;
+   }
+   .nav__item{
+    margin-left: 1rem !important;
+    margin-bottom: 0;
+  }
+    
+}
+
+
+@media screen and (max-width: 900px){
     .nav__menu{
         position: fixed;
-        top: 3rem;
+        top: 0rem;
         right: -100%;
-        width: 80%;
+        width: 100%;
         height: 100%;
         padding: 2rem;
         background-color: $base-color;
@@ -139,26 +178,38 @@ a{
         margin-bottom: 1.5rem;
         padding-bottom: 2.5rem;
     }
+    .nav__menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fa-times{
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+    body.disabledScroll{
+        overflow: hidden;
+    }
+
+    .nav__link{
+        position: relative;
+        color: $white-color;        
+        &:hover{
+            position: relative;
+            transition: .2s ease all;
+            color: $white-color;
+        }
+    }
 }
 
 .nav__item{
 margin-bottom: 2rem;
 }
 
-.nav__link{
-    position: relative;
-    color: #fff;
-    font-family: 'Glacial Indifference', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 27px;
-    &:hover{
-        position: relative;
-    transition: .2s ease all;
-    color: $secondary-color;
-    }
-}
 
 .nav__link:hover::after{
 position: absolute;
@@ -172,7 +223,7 @@ background-color: $secondary-color;
 
 .nav__toggle{
     color: $secondary-color;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -185,7 +236,6 @@ background-color: $secondary-color;
      height: 0.01rem;
      left: 0;
      top: 1.2rem;
-     
    }
 
 /* SHOW MENU */
@@ -194,7 +244,7 @@ background-color: $secondary-color;
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 800px){
+@media screen and (min-width: 900px){
     body{
       margin: 0;
     }
@@ -221,38 +271,14 @@ background-color: $secondary-color;
     }
   }  
 
-
-  @media screen and (max-width: 800px){
-    .nav__logo{
-        width: 150px;
-        height: 55px;
-    }
-
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    .nav__toggle i{
-        font-size: 2.5rem;
-    }
-
+  @media screen and (max-width: 576px){
     .nav__button{
         display: block;
     }
-  }
-
-  @media screen and (max-width: 576px){
-    .nav__button{
-        display: none;
-    }
 
     .nav__logo{
-        width: 150px;
-        height: 55px;
+        width: 135px;
+        height: 49.5px;
     }
 
     .nav{
@@ -264,13 +290,19 @@ background-color: $secondary-color;
     }
 
     .nav__toggle i{
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 280px){
+    .nav__button{
+        display: none;
     }
   }
 
 //CARROUSEL HOME
 .carousel-container{
-    margin-top: 8%;
+    // margin-top: 0%;
 }
 
 .carousel-inner{
@@ -305,7 +337,7 @@ background-color: $secondary-color;
     font-size: 57px;
     font-weight: 700;
     line-height: 75px;
-    color: #FFFFFF;
+    color: $white-color;
     text-shadow: 0px 4px 30px #000000;   
 }
 
@@ -319,11 +351,11 @@ background-color: $secondary-color;
     font-size: 21px;
     line-height: 21px;
     padding: 6px 12px;
-    background: #FFFFFF;
+    background: $white-color;
     border-radius: 4px;
     &:hover{
         background: $secondary-color;
-        color: #FFFFFF;
+        color: $white-color;
         transition: 0.3s ease all;
     }
 }
@@ -425,7 +457,7 @@ background-color: $secondary-color;
 }
   
 .media-icons i{
-    color: #FFFFFF;
+    color: $white-color;
     font-size: 1.7rem;
     background-color: $base-color;
     border-radius: 50%;
@@ -440,7 +472,7 @@ background-color: $secondary-color;
 
   @media screen and (max-width: 900px){
     .carousel-container{
-        margin-top: 15%;
+        margin-top: 5%;
     }
    .carousel__nosotros-title{
         font-size: 40px !important;
@@ -457,14 +489,14 @@ background-color: $secondary-color;
 
 @media screen and (max-width: 768px){
     .carousel-container{
-        margin-top: 10%;
+        margin-top: 5%;
     }
     
 }
 
 @media screen and (max-width: 576px){
     .carousel-container{
-        margin-top: 20%;
+        margin-top: 5%;
     }
     .carousel__nosotros-title{
         margin-top: -80% !important;
@@ -478,7 +510,7 @@ background-color: $secondary-color;
 
 @media screen and (max-width: 468px){
     .carousel-container{
-        margin-top: 27%;
+        margin-top: 5%;
     }
     .carousel__nosotros-title{
         font-size: 20px !important;
@@ -491,7 +523,7 @@ background-color: $secondary-color;
 
  @media screen and (max-width: 411px){
      .carousel-container{
-         margin-top: 20%;
+         margin-top: 5%;
      }
  }
 
@@ -503,7 +535,7 @@ background-color: $secondary-color;
     font-style: normal;
     font-family: 'Glacial Indifference', sans-serif;
     font-weight: 700;
-    color: #FFFFFF;
+    color: $white-color;
     font-size: 57.6px;
     line-height: 67.5px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -551,7 +583,7 @@ background-color: $secondary-color;
         font-weight: 700;
         font-size: 33px; //Se redujo un 10% respecto al tamaño original
         line-height: 67.5px; //Se redujo un 10% respecto al tamaño original
-        color: #FFFFFF;
+        color: $white-color;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
         z-index: 3;
         cursor: pointer;
@@ -577,7 +609,7 @@ background-color: $secondary-color;
             font-weight: 700;
             font-size: 28px;
             line-height: 75px;
-            color: #FFFFFF;
+            color: $white-color;
             text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
             z-index: 3;
             cursor: pointer;
@@ -610,7 +642,7 @@ background-color: $secondary-color;
             font-weight: 700;
             font-size: 30px;
             line-height: 75px;
-            color: #FFFFFF;
+            color: $white-color;
             text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
             z-index: 3;
             cursor: pointer;
@@ -670,7 +702,7 @@ background-color: $secondary-color;
             font-weight: 700;
             font-size: 32px;
             line-height: 67.5px;
-            color: #FFFFFF;
+            color: $white-color;
             text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
             z-index: 1;
             margin-top: 6rem !important;
@@ -727,7 +759,7 @@ background-color: $secondary-color;
             font-weight: 700;
             font-size: 28px;
             line-height: 75px;
-            color: #FFFFFF;
+            color: $white-color;
             text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
             z-index: 1;
             margin-top: 6rem !important;
@@ -754,7 +786,7 @@ background-color: $secondary-color;
             font-weight: 700;
             font-size: 28px;
             line-height: 75px;
-            color: #FFFFFF;
+            color: $white-color;
             text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
             z-index: 1;
             margin-top: 6rem !important;
@@ -890,7 +922,7 @@ background-color: $secondary-color;
 
 .footer__top{
     border-top: 3px solid $base-color;
-    background-color: #FFFFFF;
+    background-color: $white-color;
     padding: 2rem 3rem 2rem 3rem;
     display: flex;
     justify-content: space-evenly;
@@ -939,7 +971,7 @@ background-color: $secondary-color;
         display: inline-block;
         border-radius: 10px;
         background-color: $secondary-color;
-        color: #FFFFFF;
+        color: $white-color;
         font-size: 1.7rem;
         border: none;
         padding: 12px;
@@ -952,7 +984,7 @@ background-color: $secondary-color;
         display: inline-block;
         border-radius: 10px;
         background-color: $secondary-color;
-        color: #FFFFFF;
+        color: $white-color;
         font-size: 2.5rem;
         border: none;
         padding: 5px;
@@ -985,7 +1017,7 @@ background-color: $secondary-color;
     
     a{
         text-decoration: none;
-        color: #FFFFFF;
+        color: $white-color;
         font-family: 'Glacial Indifference', sans-serif;
         font-style: normal;
         font-weight: 700;
@@ -995,7 +1027,7 @@ background-color: $secondary-color;
         margin-right: 1rem;
     }
     i{
-        color: #FFFFFF;
+        color: $white-color;
         font-size: 1.5rem;
         font-weight: normal;
     }
@@ -1014,7 +1046,7 @@ background-color: $secondary-color;
 .footer__bottom-copyright{
     p{
         text-align: center;
-        color: #FFFFFF;
+        color: $white-color;
         font-family: 'Glacial Indifference', sans-serif;
         font-size: 16px;
         line-height: 30px;
@@ -1111,7 +1143,7 @@ background-color: $secondary-color;
         font-family: 'Glacial Indifference', sans-serif;
         font-style: normal;
         font-weight: 700;
-        color: #FFFFFF;
+        color: $white-color;
         font-size: 57px;
         line-height: 67px;
         text-shadow: 0px 4px 30px #000000;
@@ -1193,7 +1225,7 @@ background-color: $secondary-color;
         font-family: 'Glacial Indifference', sans-serif;
         font-style: normal;
         font-weight: 700;
-        color: #FFFFFF;
+        color: $white-color;
         font-size: 64px;
         line-height: 75px;
         text-shadow: 0px 4px 30px #000000;
@@ -1248,7 +1280,7 @@ background-color: $secondary-color;
         font-size: 64px;
         font-weight: 700;
         line-height: 75px;
-        color: #FFFFFF;
+        color: $white-color;
         text-shadow: 0px 4px 30px #000000;   
 }
    
@@ -1528,7 +1560,7 @@ background-color: $secondary-color;
     width: 100%;
     max-width: 505px;
     height: 122px;
-    background: #FFFFFF;
+    background: $white-color;
     color: $secondary-color;
     border: 2px solid #BDBDBD;
     box-sizing: border-box;
@@ -1536,7 +1568,7 @@ background-color: $secondary-color;
   }
   
   #inputEnviar {
-    color: #FFFFFF;
+    color: $white-color;
     width: 160px !important;
     margin-top: 8px !important;
     height: 30px;
@@ -1590,7 +1622,7 @@ background-color: $secondary-color;
     font-weight: bold;
     margin-bottom: 9px;
     padding: 8px 16px;
-    background: #FFFFFF;
+    background: $white-color;
     border: 2px solid $secondary-color;
     box-sizing: border-box;
     border-radius: 4.8px;
@@ -1614,7 +1646,7 @@ background-color: $secondary-color;
     margin: auto;
     font-family: 'Glacial Indifference', sans-serif;
     font-weight: bold;
-    background: #FFFFFF;
+    background: $white-color;
     border: 2px solid $secondary-color;
     box-sizing: border-box;
     border-radius: 4.8px;
