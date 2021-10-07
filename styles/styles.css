@@ -2042,4 +2042,193 @@ a {
     height: 30px !important;
   }
 }
+
+@media (max-width: 1290px) {
+  .mainPromociones {
+    background-image: url("../images/promociones1280.jpg");
+    margin-top: 9%;
+  }
+  .mainPromociones h1 {
+    margin-top: -7%;
+  }
+  .promociones__button {
+    margin-top: 3%;
+  }
+  .corporativo-container {
+    margin-top: 9% !important;
+  }
+  .corporativo__button {
+    margin-top: 6%;
+  }
+}
+
+@media (max-width: 770px) {
+  .mainPromociones {
+    background-image: url("../images/promociones770.jpg");
+    margin-top: 12%;
+  }
+  .mainPromociones h1 {
+    margin-top: -12%;
+  }
+  .promociones__button {
+    margin-top: 0%;
+  }
+  .corporativo-container {
+    margin-top: 13% !important;
+  }
+  .corporativo-container h1 {
+    font-size: 50px;
+    margin-top: -7%;
+  }
+  .corporativo__button {
+    margin-top: 2%;
+  }
+  #contenedorContacto__buttons a {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .mainPromociones {
+    background-image: url("../images/promociones540.jpg");
+    margin-top: 18%;
+  }
+  .mainPromociones h1 {
+    margin-top: -15%;
+  }
+  .promociones__button {
+    margin-top: 8%;
+  }
+  .corporativo-container {
+    margin-top: 17% !important;
+  }
+  .corporativo-container h1 {
+    margin-top: -13%;
+  }
+  .corporativo__button {
+    margin-top: -1%;
+  }
+  #contenedorContacto__buttons a {
+    margin: 0 7px;
+  }
+}
+
+@media (max-width: 420px) {
+  .mainPromociones {
+    background-image: url("../images/promociones420.jpg");
+    margin-top: 23%;
+  }
+  .mainPromociones h1 {
+    margin-top: -20%;
+  }
+  .promociones__button {
+    margin-top: 9%;
+  }
+  .corporativo-container {
+    margin-top: 24% !important;
+  }
+  .corporativo-container h1 {
+    font-size: 38px;
+  }
+  .corporativo__button {
+    margin-top: 3%;
+  }
+  #contenedorContacto__buttons a {
+    margin: 0 7px;
+  }
+}
+
+@media (max-width: 380px) {
+  .mainPromociones {
+    background-image: url("../images/promociones360.jpg");
+    margin-top: 26%;
+  }
+  .mainPromociones h1 {
+    margin-top: -20%;
+  }
+  .promociones__button {
+    margin-top: 11%;
+  }
+  .corporativo-container {
+    margin-top: 26% !important;
+  }
+  .corporativo-container h1 {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -20%;
+    font-size: 35px;
+  }
+  .corporativo__button {
+    margin-top: -3%;
+  }
+  #contenedorContacto__buttons a {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 370px) {
+  .mainPromociones {
+    background-image: url("../images/promociones360.jpg");
+    margin-top: 27%;
+  }
+  .mainPromociones h1 {
+    margin-top: -20%;
+  }
+  .promociones__button {
+    margin-top: 15%;
+  }
+  .corporativo-container {
+    margin-top: 27% !important;
+  }
+  .corporativo-container h1 {
+    margin-top: -18%;
+    font-size: 32px;
+  }
+  .corporativo__button {
+    margin-top: -1%;
+  }
+  #contenedorContacto__buttons a {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 285px) {
+  .mainPromociones {
+    background-image: url("../images/promociones280.jpg");
+    margin-top: 34%;
+  }
+  .mainPromociones h1 {
+    margin-top: -20%;
+    font-size: 30px;
+  }
+  .promociones__button {
+    margin-top: 22%;
+    font-size: 18px;
+  }
+  .corporativo-container {
+    margin-top: 35% !important;
+  }
+  .corporativo-container h1 {
+    margin-top: -20%;
+  }
+  .corporativo__button {
+    margin-top: 5%;
+  }
+  .contacto__info-container {
+    max-width: 260px;
+    word-wrap: break-word;
+  }
+  #contenedorContacto {
+    margin-top: 50%;
+  }
+  #contenedorContacto__p {
+    width: 260px;
+    margin-left: 5px;
+    margin-right: 5px;
+    word-wrap: break-word;
+  }
+  #contenedorContacto__buttons a {
+    margin: 0 2px !important;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
